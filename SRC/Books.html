@@ -5,53 +5,45 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Books</title>
 
+      <link rel="stylesheet" href="css/styles.css">
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <header>
-
-      <h1>Lidya Gebretsadik</h1>
-
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
+  <body class="body">
+    <header class="header">
+      <a class="header__name__burger" id="burger">
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+      </a> 
       
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
+      <div class="header__name">
+        <p class="header__name__para">Lidya Gebretsadik</p>
       </div>
-
-    </header>
-
-    <section class="favorites">
-      <h2>Favorite Books</h2>
-
-      <div class="book-card">
-        <div class="book-description">
-          <div class="book-cover">
-          <img src="images/sword_of_kaigen.jpg" alt="sword or Kaigen">
+      <div class="header__con" >
+        <nav class="header__con__nav" >
+          <a class="header__con__nav__link" id="nav-links" href="Home.html">Home</a>
+          <a class="header__con__nav__link" id="nav-links2" href="Resume.html">Resume</a>
+          <a class="header__con__nav__link" id="nav-links3" href="Hobbies.html">Hobbies</a>
+          <a class="header__con__nav__link" id="nav-links4" href="Books.html">Books</a>
+          <a class="header__con__nav__link" id="nav-links5" href="Contact.html">Contact</a>
+        </nav>
         </div>
-          <div class="book-info">
+        
+    </header>
+    <section class="favorites">
+      <h2 class="favorites__para">Favorite Books</h2>
+
+      <div class="favorites__book-card">
+        <div class="favorites__book-card__description">
+          <div class="description__book-cover">
+          <img class="description__book-cover__img" src="/images/sword_of_kaigen.jpg" alt="sword or Kaigen">
+        </div>
+          <div class="favorites__book-card__info">
             <h3>The Sword of Kaigen</h3>
             <p>Author - M.L. Wang</p>
             <p>Average Rating - 4.45</p>
@@ -59,9 +51,9 @@
             <p>First published January 1, 2018</p>
           </div>
         </div>
-        <div class="review">
+        <div class="favorites__book-card__review">
           <h3>My Review</h3>
-          <p>Seems like ages since I've been captivated by a book as  much as this. I haven't read in one sitting for a long time.
+          <p class="favorites__book-card__review__para">Seems like ages since I've been captivated by a book as  much as this. I haven't read in one sitting for a long time.
             Despite having an unfamiliar structure... This book was mesmerizing begining to end. The plot was undeniably astonishing. Pacing was nicely maintained felt like this was a short story.
             The focus on the despair of the characters was what made the book amazing. Gave it its emotion connection. By that I mean I cried. camon camon.. Why kill the kid why??
             It was a great recommendation koloss. I am grateful.
@@ -69,12 +61,12 @@
         </div>
       </div>
 
-      <div class="book-card">
-          <div class="book-description">
-            <div class="book-cover">
-            <img src="images/pet_sematary.jpg" alt="pet sematary">
+      <div class="favorites__book-card">
+          <div class="favorites__book-card__description">
+            <div class="description__book-cover">
+            <img  class="description__book-cover__img" src="/images/pet_sematary.jpg" alt="pet sematary">
           </div>
-            <div class="book-info">
+            <div class="favorites__book-card__info">
               <h3>Pet Sematary</h3>
               <p>Author - Stephen King</p>
               <p>Average Rating - 4.05</p>
@@ -82,9 +74,9 @@
               <p>First published November 14, 1983</p>
             </div>
           </div>
-        <div class="review">
+        <div class="favorites__book-card__review">
           <h3>My Review</h3>
-          <p>"She needs me, but I can't come, because I'm afraid—so terribly afraid—that my hands are filthy with her mother's blood."
+          <p class="favorites__book-card__review__para">"She needs me, but I can't come, because I'm afraid—so terribly afraid—that my hands are filthy with her mother's blood."
             ...
             "Would they have someone wash her hair? he asked. She washed it last on Monday night, and so it had been dirty when she died"
             ...
@@ -97,12 +89,12 @@
         </div>
       </div>
 
-      <div class="book-card">
-        <div class="book-description">
-          <div class="book-cover">
-          <img src="images/coraline.jpg" alt="coraline">
+      <div class="favorites__book-card">
+        <div class="favorites__book-card__description">
+          <div class="description__book-cover">
+          <img class="description__book-cover__img" src="/images/coraline.jpg" alt="coraline">
           </div>
-          <div class="book-info">
+          <div class="favorites__book-card__info">
             <h3>Coraline</h3>
             <p>Author - Neil Gaiman</p>
             <p>Average Rating - 4.11</p>
@@ -110,9 +102,9 @@
             <p>First published July 2,2002</p>
           </div>
         </div>
-        <div class="review">
+        <div class="favorites__book-card__review">
           <h3>My Review</h3>
-          <P>
+          <P class="favorites__book-card__review__para">
             She IS Brave. 
             I love how this story never ceases to scare me no matter how many times I hear it. Although, this time, Neil Gaiman's voice  was a huge contributor(audio book - highly recommended).
             "And, after all, it is always easier to be afraid of something you cannot see." 
@@ -122,12 +114,12 @@
         </div>
       </div>
 
-      <div class="book-card">
-        <div class="book-description">
-          <div class="book-cover">
-          <img src="images/words_of_radiance.jpg" alt="words of radience">
+      <div class="favorites__book-card">
+        <div class="favorites__book-card__description">
+          <div class="description__book-cover">
+          <img class="description__book-cover__img"  src="/images/words_of_radiance.jpg" alt="words of radience">
           </div>
-          <div class="book-info">
+          <div class="favorites__book-card__info">
             <h3>Words of Radience - The Stormlight Archive #2</h3>
             <p>Author - Brandon Sanderson</p>
             <p>Average Rating - 4.76</p>
@@ -135,9 +127,9 @@
             <p>First published March 4, 2014</p>
           </div>
         </div>
-        <div class="review">
+        <div class="favorites__book-card__review">
           <h3>My Review</h3>
-          <p>There was a lot of awesomeness (not the lift kind, the normal kind), Obviously. Brandon, yet again, amazed me. I, personally, would not dare give him a rating below 5.
+          <p class="favorites__book-card__review__para">There was a lot of awesomeness (not the lift kind, the normal kind), Obviously. Brandon, yet again, amazed me. I, personally, would not dare give him a rating below 5.
             2 books and I'm just beginning to understand how the world works... Storms! 2 more books to go and hopefully I will know my order(I hope I'm awesome! ) That is If the everstorm doesn't doom us all... a mystery yet to be solved.</p>
         </div>
       </div>
@@ -146,11 +138,11 @@
     </section>
 
     <section class="read">
-     <h2>Read</h2>
-     <div class="read-container">
+     <h2 class="read__para">Read</h2>
+     <div class="read__con">
       <h3>5 star ratings</h3>
-      <div class="read-list">
-        <ul>
+      <div class="read__con__list">
+        <ul class="read__con__list__ul">
           <li>The Sea of Monsters</li>
           <li>Master of the Gane</li>
           <li>The Well of Ascension</li>
@@ -165,10 +157,10 @@
       </div>
      </div>
 
-     <div class="read-container">
+     <div class="read__con">
       <h3>4 star ratings</h3>
-      <div class="read-list">
-        <ul>
+      <div class="read__con__list">
+        <ul class="read__con__list__ul">
           <li>The Great Gatsby</li>
           <li>Needful Things</li>
           <li>Harry Potter and the prisoner of Azkaban</li>
@@ -183,10 +175,10 @@
       </div>
      </div>
 
-     <div class="read-container">
+     <div class="read__con">
       <h3>3 star ratings</h3>
-      <div class="read-list">
-        <ul>
+      <div class="read__con__list">
+        <ul class="read__con__list__ul">
           <li>Carrie</li>
           <li>Wuthering Heights</li>
           <li>The Perks of Being a Wall Flower</li>
@@ -203,9 +195,9 @@
     </section>
 
     <section class="want-to-read">
-      <h2>Want to Read</h2>
-      <div class="want-to-read-container">
-        <ul>
+      <h2 class="want-to-read__para">Want to Read</h2>
+      <div class="want-to-read__con">
+        <ul class="want-to-read__con__list">
           <li>The Girl on the Train</li>
           <li>Jane Eyre</li>
           <li>The Alchemist</li>
@@ -221,37 +213,36 @@
     </section>
 
 
-    <footer>
+    <<footer class="footer">
 
-      <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+      <P class="footer__copyright">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
 
-      <nav class="foot-nav">
+      <nav class="footer__foot-nav">
         <p>Go to</p>
-        <a href="Home.html">Home</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Books.html">Books</a>
-        <a href="Contact.html">Contact</a>
+        <a class="footer__foot-nav__link"href="Home.html">Home</a>
+        <a class="footer__foot-nav__link"href="Resume.html">Resume</a>
+        <a class="footer__foot-nav__link"href="Hobbies.html">Hobbies</a>
+        <a class="footer__foot-nav__link"href="Books.html">Books</a>
+        <a class="footer__foot-nav__link"href="Contact.html">Contact</a>
       </nav>
 
-      <div class="write">
+      <div class="footer__write">
         <p>Write</p>
-        <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+        <a class="footer__write__link"href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
       </div>
       
-      <div class="follow">
+      <div class="footer__follow">
         <p>Follow</p>
-        <div>
-          <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-          
+        <div class="footer__follow__link-con">
+          <a class="footer__follow__link-con__link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="footer__follow__link-con__link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
       </div>
 
-      <div class="details">
+      <div class="footer__details">
         <p>Details</p>
-        <address>Addis Ababa, Ethiopia</address>
-        <p>+251941139289</p>
+        <address class="footer__details__address">Addis Ababa, Ethiopia</address>
+        <p  class="footer__details__title">+251941139289</p>
       </div>
 
       
@@ -260,6 +251,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/index.js"></script>
   </body>
 
 </html>

@@ -4,96 +4,89 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Home</title>
-      
+      <link rel="stylesheet" href="css/styles.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/styles.css">
-
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
         
     </head>
 
 
-  <body>
-    <header>
-      <h1>Lidya Gebretsadik</h1>
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
+  <body class="body">
+    <header class="header">
+      <a class="header__name__burger" id="burger">
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+      </a> 
       
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
+      <div class="header__name">
+        <p class="header__name__para">Lidya Gebretsadik</p>
       </div>
+      <div class="header__con" >
+        <nav class="header__con__nav" >
+          <a class="header__con__nav__link" id="nav-links" href="Home.html">Home</a>
+          <a class="header__con__nav__link" id="nav-links2" href="Resume.html">Resume</a>
+          <a class="header__con__nav__link" id="nav-links3" href="Hobbies.html">Hobbies</a>
+          <a class="header__con__nav__link" id="nav-links4" href="Books.html">Books</a>
+          <a class="header__con__nav__link" id="nav-links5" href="Contact.html">Contact</a>
+        </nav>
+        </div>
+        
     </header>
 
-    <div>
-      <article class="profile-card">
+    <div class="profile-con">
+      <article class="profile-con__card">
 
-        <div class="profile-picture">
-          <img src="images/Profile.jpg" alt="Profile">
+        <div class="profile-con__card__profile-picture">
+          <img  class="profile-con__card__profile-picture__img" src="/images/Profile.jpg" alt="Profile">
         </div>
 
-        <div class="name-status">
-          <h2>Lidya Gebretsadik</h2>
-          <p>Software Engineering Student</p>
+        <div class="profile-con__card__name-status">
+          <h2 class="profile-con__card__name-status__name">Lidya Gebretsadik</h2>
+          <p class="profile-con__card__name-status__field">Software Engineering Student</p>
         </div>
 
-        <div class="icon-links-container">
-          <a class="icon-link" href="https://github.com/lead-gebrat"><ion-icon name="logo-github"></ion-icon></a>
-          <a class="icon-link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a class="icon-link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <div class="icon-con">
+          <a class="icon-con__link" href="https://github.com/lead-gebrat"><ion-icon name="logo-github"></ion-icon></a>
+          <a class="icon-con__link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="icon-con__link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
 
         <div class="nav-buttons">
-          <form action="Resume.html"> <button type="submit">Resume</button> </form>
-          <form action="Contact.html"> <button type="submit">Contact</button> </form>
+          <form class="nav-buttons__form" action="Resume.html"> <button class="nav-buttons__form__btn" type="submit">Resume</button> </form>
+          <form   class="nav-buttons__form"  action="Contact.html"> <button class="nav-buttons__form__btn" type="submit">Contact</button> </form>
         </div>
 
       </article>
       
-      <article>
+      <article class="profile-con__about-me">
 
-        <h2>About Me</h2>
-        <p>Hello! My name is Lidya Gebretsadik. I am currently a third year Software Engineering student at <abbr title="Addis Ababa Institute of technology">AAIT</abbr>.  I am a passionate and driven individual with a love for creativity.I made this profile and portfolio website to showcase my current level of skills in web development. In my free time, you can find me taking pictures, reading a book or coding. I am always eager to learn and grow with the new and different challenges I may face. I am always excited for the opportunities that I have yet to discover. My strong ability to work with people helps me gain more experience from those I surround myself with. Please feel free to checkout more details about me with each page.
+        <h2 class="profile-con__about-me__header">About Me</h2>
+        <p class="profile-con__about-me__para">Hello! My name is Lidya Gebretsadik. I am currently a third year Software Engineering student at <abbr title="Addis Ababa Institute of technology">AAIT</abbr>.  I am a passionate and driven individual with a love for creativity.I made this profile and portfolio website to showcase my current level of skills in web development. In my free time, you can find me taking pictures, reading a book or coding. I am always eager to learn and grow with the new and different challenges I may face. I am always excited for the opportunities that I have yet to discover. My strong ability to work with people helps me gain more experience from those I surround myself with. Please feel free to checkout more details about me with each page.
         </p>
 
-        <h2>Skills</h2>
+        <h2 class="profile-con__about-me__header">Skills</h2>
 
-        <table>
+        <table class="profile-con__about-me__table">
           <tr>
-            <td>HTML</td>
-            <td><label for="html">80%</label>
+            <td  class="about-me__table__data">HTML</td>
+            <td class="about-me__table__data"><label for="html">80%</label>
               <progress id="html" value="80" max="100">80%</progress></td>
           </tr>
 
           <tr>
-            <td>CSS</td>
-            <td><label for="css">67%</label>
+            <td class="about-me__table__data">CSS</td>
+            <td class="about-me__table__data"><label for="css">67%</label>
               <progress id="css" value="67" max="100"> 67% </progress></td>
           </tr>
 
           <tr>
-            <td>JavaScript</td>
-            <td><label for="javascript">48%</label>
+            <td class="about-me__table__data">JavaScript</td>
+            <td class="about-me__table__data"><label for="javascript">48%</label>
               <progress id="javascript" value="48" max="100">48% </progress></td>
           </tr>
 
@@ -101,37 +94,36 @@
       </article>
     </div>
 
-    <footer>
+    <footer class="footer">
 
-      <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+      <P class="footer__copyright">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
 
-      <nav class="foot-nav">
+      <nav class="footer__foot-nav">
         <p>Go to</p>
-        <a href="Home.html">Home</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Books.html">Books</a>
-        <a href="Contact.html">Contact</a>
+        <a class="footer__foot-nav__link"href="Home.html">Home</a>
+        <a class="footer__foot-nav__link"href="Resume.html">Resume</a>
+        <a class="footer__foot-nav__link"href="Hobbies.html">Hobbies</a>
+        <a class="footer__foot-nav__link"href="Books.html">Books</a>
+        <a class="footer__foot-nav__link"href="Contact.html">Contact</a>
       </nav>
 
-      <div class="write">
+      <div class="footer__write">
         <p>Write</p>
-        <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+        <a class="footer__write__link"href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
       </div>
       
-      <div class="follow">
+      <div class="footer__follow">
         <p>Follow</p>
-        <div>
-          <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-          
+        <div class="footer__follow__link-con">
+          <a class="footer__follow__link-con__link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="footer__follow__link-con__link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
       </div>
 
-      <div class="details">
+      <div class="footer__details">
         <p>Details</p>
-        <address>Addis Ababa, Ethiopia</address>
-        <p>+251941139289</p>
+        <address class="footer__details__address">Addis Ababa, Ethiopia</address>
+        <p  class="footer__details__title">+251941139289</p>
       </div>
 
       
@@ -140,6 +132,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/index.js"></script>
   </body>
   
 </html>

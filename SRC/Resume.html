@@ -5,79 +5,74 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Resume</title>
 
+      <link rel="stylesheet" href="css/styles.css">
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-      <link rel="stylesheet" href="css/styles.css">
-
   </head>
-  <body>
-    <header>
-      <h1>Lidya Gebretsadik</h1>
-
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
-
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
-      </div>
+  <body class="body">
+    <header class="header">
+      <a class="header__name__burger" id="burger">
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+      </a> 
       
+      <div class="header__name">
+        <p class="header__name__para">Lidya Gebretsadik</p>
+      </div>
+      <div class="header__con" >
+        <nav class="header__con__nav" >
+          <a class="header__con__nav__link" id="nav-links" href="Home.html">Home</a>
+          <a class="header__con__nav__link" id="nav-links2" href="Resume.html">Resume</a>
+          <a class="header__con__nav__link" id="nav-links3" href="Hobbies.html">Hobbies</a>
+          <a class="header__con__nav__link" id="nav-links4" href="Books.html">Books</a>
+          <a class="header__con__nav__link" id="nav-links5" href="Contact.html">Contact</a>
+        </nav>
+        </div>
+        
     </header>
 
     <section class="education">
       <h2>Education</h2>
-      <div class="education-container">
+      <div class="education__container">
         <p>Addis Ababa Institute of Technology - Software Engineering</p>
         <p>2021 - 2023</p> 
       </div>
     </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <p>Web development</p>
-        <table>
+    <section class="skills-con">
+      <h2 class="skills-con__para">Skills</h2>
+
+      <div class="skills-con__skills">
+        <p class="skills-con__skills__para">Web development</p>
+        <table class="skills-con__skills__table">
           <tr>
-            <td>HTML</td>
-            <td><label for="html">80%</label>
+            <td class="skills-con__skills__table__data">HTML</td>
+            <td class="skills-con__skills__table__data"><label for="html">80%</label>
               <progress id="html" value="80" max="100">80%</progress></td>
           </tr>
 
           <tr>
-            <td>CSS</td>
-            <td><label for="css">67%</label>
+            <td class="skills-con__skills__table__data">CSS</td>
+            <td class="skills-con__skills__table__data"><label for="css">67%</label>
               <progress id="css" value="67" max="100"> 67% </progress></td>
           </tr>
 
           <tr>
-            <td>JavaScript</td>
-            <td><label for="javascript">48%</label>
+            <td class="skills-con__skills__table__data">JavaScript</td>
+            <td class="skills-con__skills__table__data"><label for="javascript">48%</label>
               <progress id="javascript" value="48" max="100">48% </progress></td>
           </tr>
         </table>
       </div>
 
-      <div class="skills">
-        <p>Courses</p>
+      <div class="skills-con__skills">
+        <p class="skills-con__skills__para">Courses</p>
         <ul>
           <li>Networking Essentials - Cisco Academy</li>
           <li>Data Structures and Algorithm - <abbr title="Addis Ababa Institute of Technology">AAiT</abbr></li>
@@ -85,105 +80,109 @@
           <li>Introduction to Front-End Development - Meta</li>
         </ul>
       </div>
-      <div class="skills">
-        <p>Languages</p>
-        <ul>
-          <li>Amharic - Native</li>
-          <li>English - Proficient</li>
-          <li>Tigrigna - Proficient</li>
-          <li>Korean - Beginner</li>
+
+      <div class="skills-con__skills">
+        <p class="skills-con__skills__para">Languages</p>
+        <ul class="skills-con__skills__un">
+          <li class="skills-con__skills__un__list">Amharic - Native</li>
+          <li class="skills-con__skills__un__list">English - Proficient</li>
+          <li class="skills-con__skills__un__list">Tigrigna - Proficient</li>
+          <li class="skills-con__skills__un__list">Korean - Beginner</li>
         </ul>
       </div>
+
     </section>
 
-    <section>
+    <section class="certificates">
       <h2>Certificates</h2>
-      <div class="certificates-container">
-        <div class="certificate">
+      <div class="certificates__con">
+
+        <div class="certificates__con__file">
           <p>Networking Essentials certificate - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
-            <img src="images/essentials.png" alt="essentials-certificate">
+          <div class="certificates__con__file__pdf">
+            <a class="certificate-download" href="images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
+            <img class="certificates__con__file__pdf__img" src="images/essentials.png" alt="essentials-certificate">
           </div>
            
         </div>
 
-        <div class="certificate">
+        <div class="certificates__con__file">
           <p>Introduction to Packet Tracer - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
-            <img src="images/packet.png" alt="packet-certificate">
+          <div class="certificates__con__file__pdf">
+            <a class="certificate-download" href="images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
+            <img class="certificates__con__file__pdf__img" src="images/packet.png" alt="packet-certificate">
           </div>
 
         </div>
 
-        <div class="certificate">
+        <div class="certificates__con__file">
           <p>Introduction to Front-End Development - Meta</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
-          <img src="images/meta.png" alt="meta-certificate"> 
+          <div class="certificates__con__file__pdf">
+            <a class="certificate-download" href="images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
+          <img class="certificates__con__file__pdf__img" src="images/meta.png" alt="meta-certificate"> 
           </div>
           
         </div>
 
-        <div class="certificate">
+        <div class="certificates__con__file">
           <p>Internship - Yerer Hospital </p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
-            <img src="images/yerer.png" alt="yerer-certificate">
+          <div class="certificates__con__file__pdf">
+            <a class="certificate-download" href="images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
+            <img  class="certificates__con__file__pdf__img" src="images/yerer.png" alt="yerer-certificate">
           </div>
            
         </div>
 
-        <div class="certificate">
+        <div class="certificates__con__file">
           <p>Book Club - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
-            <img src="images/book.png" alt="book-club-certificate">
+          <div class="certificates__con__file__pdf">
+            <a class="certificate-download" href="images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
+            <img class="certificates__con__file__pdf__img" src="images/book.png" alt="book-club-certificate">
           </div>
           
         </div>
-        
-        <p>Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-        <div class="pdf">
-          <a class="certificate-download" href="/images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
-          <img src="images/fmp.png" alt="fmp-club-certificate">
+
+        <div class="certificates__con__file">
+          <p>Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
+        <div class="certificates__con__file__pdf">
+          <a class="certificate-download" href="images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
+          <img class="certificates__con__file__pdf__img" src="images/fmp.png" alt="fmp-club-certificate">
         </div>
-         
+        </div> 
+
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
 
-      <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+      <P class="footer__copyright">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
 
-      <nav class="foot-nav">
+      <nav class="footer__foot-nav">
         <p>Go to</p>
-        <a href="Home.html">Home</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Books.html">Books</a>
-        <a href="Contact.html">Contact</a>
+        <a class="footer__foot-nav__link"href="Home.html">Home</a>
+        <a class="footer__foot-nav__link"href="Resume.html">Resume</a>
+        <a class="footer__foot-nav__link"href="Hobbies.html">Hobbies</a>
+        <a class="footer__foot-nav__link"href="Books.html">Books</a>
+        <a class="footer__foot-nav__link"href="Contact.html">Contact</a>
       </nav>
 
-      <div class="write">
+      <div class="footer__write">
         <p>Write</p>
-        <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+        <a class="footer__write__link"href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
       </div>
       
-      <div class="follow">
+      <div class="footer__follow">
         <p>Follow</p>
-        <div>
-          <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-          
+        <div class="footer__follow__link-con">
+          <a class="footer__follow__link-con__link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="footer__follow__link-con__link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
       </div>
 
-      <div class="details">
+      <div class="footer__details">
         <p>Details</p>
-        <address>Addis Ababa, Ethiopia</address>
-        <p>+251941139289</p>
+        <address class="footer__details__address">Addis Ababa, Ethiopia</address>
+        <p  class="footer__details__title">+251941139289</p>
       </div>
 
       
@@ -192,5 +191,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -5,112 +5,107 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Hobbies</title>
 
+      <link rel="stylesheet" href="css/styles.css">
+      
       <link rel="preconnect" href="https://fonts.googleapis.com">
 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-      <link rel="stylesheet" href="css/styles.css">
-
   </head>
-  <body>
-    <header>
-      <h1>Lidya Gebretsadik</h1>
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
+  <body class="body">
+    <header class="header">
+      <a class="header__name__burger" id="burger">
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+        <span class="header__name__burger__line"></span>
+      </a> 
       
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
+      <div class="header__name">
+        <p class="header__name__para">Lidya Gebretsadik</p>
       </div>
-
+      <div class="header__con" >
+        <nav class="header__con__nav" >
+          <a class="header__con__nav__link" id="nav-links" href="Home.html">Home</a>
+          <a class="header__con__nav__link" id="nav-links2" href="Resume.html">Resume</a>
+          <a class="header__con__nav__link" id="nav-links3" href="Hobbies.html">Hobbies</a>
+          <a class="header__con__nav__link" id="nav-links4" href="Books.html">Books</a>
+          <a class="header__con__nav__link" id="nav-links5" href="Contact.html">Contact</a>
+        </nav>
+        </div>
+        
     </header>
     <section class="photographs">
       
-      <div class="photography-history">
-        <h2>Photography</h2>
+      <div class="photographs__history">
+        <h2 class="photographs__history__para">Photography</h2>
         <p>The first hobby i participate in is photography. I began to indulge in taking pictures of flowers in the begining of this year - 2023.These are my favorite pictures.</p>
       </div>
-      <div class="photo-card-container">
+      <div class="photographs__con">
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/pink_tint.jpg" alt="Pink Tint">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/pink_tint.jpg" alt="Pink Tint">
           </div>
-          <div class="photo-description">
-            <h2>Pink Tint</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Pink Tint</h2>
             <p>This picture was taken on <date-time>2023-07-03</date-time> at</p>
             <address>5 killo,<abbr title="Addis Ababa Institue of Technology">AAIT</abbr> Green Area</address>
           </div>
         </div>
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/sunny.jpg" alt="sunset">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/sunny.jpg" alt="sunset">
           </div>
-          <div class="photo-description">
-            <h2>Sunset</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Sunset</h2>
             <p>This picture was taken on <date-time>2023-11-23</date-time> at </p>
             <address>5 killo,<abbr title="Addis Ababa Institue of Technology">AAIT</abbr> Green Area</address>
           </div>
         </div>
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/Blue-Blooms.jpg" alt="blue blooms">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/Blue-Blooms.jpg" alt="blue blooms">
           </div>
-          <div class="photo-description">
-            <h2>Blue Blooms</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Blue Blooms</h2>
             <p>This picture was taken on <date-time>2023-11-01</date-time>  </p>
             <address>6 killo,<abbr title="Collage of Business and Economics">CBE</abbr> Dormitory</address>
           </div>
         </div>
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/Orange-Bliss.jpg" alt="range bliss">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/Orange-Bliss.jpg" alt="range bliss">
           </div>
-          <div class="photo-description">
-            <h2>Orange Bliss</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Orange Bliss</h2>
             <p>This picture was taken on <date-time>2023-11-25</date-time> 
             </p>
             <address>5 killo,<abbr title="Addis Ababa Institue of Technology">AAIT</abbr> Electrical Building</address>
           </div>
         </div>
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/small_pink_tint.jpg" alt="peach">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/small_pink_tint.jpg" alt="peach">
           </div>
-          <div class="photo-description">
-            <h2>Peach</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Peach</h2>
             <p>This picture was taken on <date-time>2023-10-30</date-time> at </p>
             <address>5 killo,<abbr title="Addis Ababa Institue of Technology">AAIT</abbr> Main Entrance</address>
           </div>
         </div>
 
-        <div class="photo-card">
-          <div class="flower">
-            <img src="images/Purple-Amidst.jpg" alt="purple amidst">
+        <div class="photographs__con__card">
+          <div class="photographs__con__card__flower">
+            <img class="photographs__con__card__flower__img" src="images/Purple-Amidst.jpg" alt="purple amidst">
           </div>
-          <div class="photo-description">
-            <h2>Purple Amidst</h2>
+          <div class="photographs__con__card__description">
+            <h2  class="photographs__con__card__description__para">Purple Amidst</h2>
             <p>This picture was taken on <date-time>2023-09-21</date-time></p>
             <address>Torhailoch, Mekonenoch Club</address>
           </div>
@@ -120,76 +115,85 @@
     </section>
 
     <section class="movies">
-      <h2>Movies</h2>
-      <div class="movie-history">
+      <h2 class="movies__para">Movies</h2>
+      <div class="movies__history">
         
         <p>Watching movies has been one of my favorite things to do since I can remember.The following are my favorite movies of all time.</p>
       </div>
 
-      <div class="movie-cards-container">
+      <div class="movies__con">
 
-        <div class="movie-card">
-          <div class="movie">
-            <video controls autoplay muted >
+        <div class="movies__con__card">
+
+          <div class="movies__con__card__movie">
+            <video class="movies__con__card__movie__vid" controls autoplay muted >
             <source src="images/Moana-Official-Trailer.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
         </div>
-          <div class="movie-description">
-            <h2>Moana - 2016</h2>
+
+          <div class="movies__con__description">
+            <h2 class="movies__con__description__para" >Moana - 2016</h2>
           <blockquote cite="https://www.imdb.com/title/tt3521164/">
             <p>Moana is a story that takes place in Ancient Polynesia, when a curse reaches the island Mata Nui a chieftain's daughter is determined to go on a journey, to find a demigod named Maui in order to stop the curse.</p>
           </blockquote> 
           </div>
+
         </div>
 
-        <div class="movie-card">
-          <div class="movie">
-            <video  controls autoplay muted >
+        <div class="movies__con__card">
+          <div class="movies__con__card__movie">
+            <video class="movies__con__card__movie__vid" controls autoplay muted >
               <source src="images/Titanic-Trailer.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
           </div>
+
           <div class="movie-description">
-            <h2>Titanic - 1997</h2>
+            <h2 class="movies__con__description__para">Titanic - 1997</h2>
           <blockquote cite="https://en.wikipedia.org/wiki/Titanic_(1997_film)">
             <p>Incorporating both historical and fictionalized aspects, it is based on accounts of the sinking of RMS Titanic in 1912. Kate Winslet and Leonardo DiCaprio star as members of different social classes who fall in love during the ship's maiden voyage.</p>
           </blockquote> 
           </div>
+
         </div>
 
-        <div class="movie-card">
-          <div class="movie">
-            <video controls autoplay muted >
+        <div class="movies__con__card">
+
+          <div class="movies__con__card__movie">
+            <video  class="movies__con__card__movie__vid"controls autoplay muted >
               <source src="images/About-Time-Trailer.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
           </div>
+
           <div class="movie-description">
-            <h2>About Time - 2013</h2>
+            <h2 class="movies__con__description__para">About Time - 2013</h2>
           <blockquote cite="https://www.imdb.com/title/tt2194499/plotsummary/">
             <p>At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.</p>
           </blockquote>
           </div>
+
         </div>
 
       </div>
       </section>
 
       <section class="musics">
-        <h2>Music</h2>
-        <div class="music-history">
+        <h2 class="musics__para">Music</h2>
+        <div class="musics__history">
           
           <p>Although I dont listen to music often, these songs are the ones I always come back to.</p>
         </div>
-        <div class="music-cards-continer">
-          <div class="music-card">
-            <div class="album-cover">
-              <img src="images/wallows.jpg" alt="">
+        <div class="musics__con">
+          
+          <div class="musics__con__card">
+            <div class="musics__con__card__album">
+              <img  class="musics__con__card__album__img"src="images/wallows.jpg" alt="">
             </div>
-            <div class="music">
-              <h3>Pleaser - Wallows</h3>
-              <audio controls  muted >
+            <div class="musics__con__card__music">
+              <h3 class="musics__con__card__music__title">Pleaser - Wallows</h3>
+              <audio  class="musics__con__card__music__aud" controls  muted >
                 <source src="images/Wallows_-_Pleaser__Lyric_Video_(128k).mp3" type="audio/mp3">
               Your browser does not support the audio tag.
               </audio>
@@ -197,13 +201,13 @@
             </div>
 
 
-           <div class="music-card">
-            <div class="album-cover">
-              <img src="images/closer.jpg" alt="">
+           <div class="musics__con__card">
+            <div class="musics__con__card__album">
+              <img  class="musics__con__card__album__img"src="images/closer.jpg" alt="">
               </div>
-            <div class="music">
-              <h3>Closer - The chainsmokers ft Halsey </h3>
-              <audio controls  muted >
+            <div class="musics__con__card__music">
+              <h3 class="musics__con__card__music__title">Closer - The chainsmokers ft Halsey </h3>
+              <audio class="musics__con__card__music__aud" controls  muted >
                 <source src="images/The_Chainsmokers_-_Closer__Lyric__ft._Halsey(128k).mp3" type="audio/mp3">
               Your browser does not support the audio tag.
               </audio>
@@ -211,13 +215,13 @@
            </div>
 
 
-           <div class="music-card">
-            <div class="album-cover">
-              <img src="images/double_take.jpg" alt="double take">
+           <div class="musics__con__card">
+            <div class="musics__con__card__album">
+              <img class="musics__con__card__album__img" src="images/double_take.jpg" alt="double take">
             </div>
-            <div class="music">
-              <h4>Double Take - dhruv</h4>
-              <audio controls  muted >
+            <div class="musics__con__card__music">
+              <h3 class="musics__con__card__music__title">Double Take - dhruv</h3>
+              <audio  class="musics__con__card__music__aud"controls  muted >
                 <source src="images/dhruv_-_double_take__Official_Audio_(128k).mp3" type="audio/mp3">
               Your browser does not support the audio tag.
               </audio>
@@ -226,43 +230,44 @@
         </div>
       </section>
 
-      <footer>
+      <footer class="footer">
 
-        <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+        <P class="footer__copyright">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
   
-        <nav class="foot-nav">
+        <nav class="footer__foot-nav">
           <p>Go to</p>
-          <a href="Home.html">Home</a>
-          <a href="Resume.html">Resume</a>
-          <a href="Hobbies.html">Hobbies</a>
-          <a href="Books.html">Books</a>
-          <a href="Contact.html">Contact</a>
+          <a class="footer__foot-nav__link"href="Home.html">Home</a>
+          <a class="footer__foot-nav__link"href="Resume.html">Resume</a>
+          <a class="footer__foot-nav__link"href="Hobbies.html">Hobbies</a>
+          <a class="footer__foot-nav__link"href="Books.html">Books</a>
+          <a class="footer__foot-nav__link"href="Contact.html">Contact</a>
         </nav>
   
-        <div class="write">
+        <div class="footer__write">
           <p>Write</p>
-          <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+          <a class="footer__write__link"href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
         </div>
         
-        <div class="follow">
+        <div class="footer__follow">
           <p>Follow</p>
-          <div>
-            <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-            
+          <div class="footer__follow__link-con">
+            <a class="footer__follow__link-con__link" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="footer__follow__link-con__link" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
           </div>
         </div>
   
-        <div class="details">
+        <div class="footer__details">
           <p>Details</p>
-          <address>Addis Ababa, Ethiopia</address>
-          <p>+251941139289</p>
+          <address class="footer__details__address">Addis Ababa, Ethiopia</address>
+          <p  class="footer__details__title">+251941139289</p>
         </div>
   
         
       </footer>
-  
+
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script src="js/index.js"></script>
   </body>
 </html>

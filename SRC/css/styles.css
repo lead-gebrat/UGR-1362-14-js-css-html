@@ -2,16 +2,16 @@
   margin:0;
   font-family: serif;
 }
-body{
+.body{
   display:grid;
   row-gap:1em;
   justify-content: center;
   
 }
 
-/*--- header styles begins here ---*/
+/*--- .home-header styles begins here ---*/
 
-header{
+.header{
   display:grid;
   grid-template-columns: 1fr 1fr;
   width:100vw;
@@ -24,19 +24,19 @@ header{
   box-shadow: 0px 0px 10px grey;
 }
 
-header h1{
+.header__name__para{
   width:fit-content;
   font-size: 1.3em;
   padding-left:0.2em;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.head-nav{
+/* .header__con__nav{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
+} */
 
-.nav-link{
+.header__con__nav__link{
   display:none;
   padding: 0.5em;
   text-decoration: none;
@@ -46,108 +46,81 @@ header h1{
   width:fit-content;
 } 
 
-.nav-link:hover{
+.header__con__nav__link:hover{
   background-color:rgb(129, 126, 126); 
 }
- 
-/* menu styles */
 
-.hamburger-menu{
-  display: grid;
-  gap:6px;
-  width: fit-content;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
+.header__name__burger{
+  width:32px;
+  position:absolute;
+  right:20px;
 }
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-  content: "";
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 9999px;
-  transform-origin: left center;
-}
-
-.hamburger-menu input {
-  appearance: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  pointer-events: none;
-}
-
-.sidebar nav a{
-  display: none;
-}
-
-.hamburger-menu:has(input:checked) + .sidebar nav a{
+.header__name__burger__line{
   display:block;
-  padding:0.5em;
-  text-decoration:none;
-  width:fit-content;
-  border-radius:2px;
+  width:100%;
+  height:4px;
+  background-color:white;
+  margin: 3px;
+}
+.show{
+  display:block;
+  background-color: #212121;
+  padding: 0.5em;
+  text-decoration: none;
   color:white;
   font-size:1em;
+  border-radius:2px;
+  width:fit-content;
 }
+ 
 
-.hamburger-menu:has(input:checked) + .sidebar nav a:hover{
-  display:block;
-  padding:0.5em;
-  text-decoration:none;
-  background-color:rgb(129, 126, 126);
-  font-size:1em;
-}
-
-/*--- header styles end here ---*/
+/*--- .home-header styles end here ---*/
 
 
 /*----- footer styles begin----- */
 
-footer{
+.footer{
   width:100vw;
   padding:1em;
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
   column-gap: 0.5em;
   row-gap: 1em;
   background-color: #212121;
   color:rgb(255, 255, 255);
 }
 
-footer p{
+.footer__copyright{
   grid-row:span 2 ;
 }
 
-footer a{
+.footer__foot-nav__link, .footer__write__link, .footer__follow__link-con__link{
   color:#b4adea;
 }
 
-footer a:hover{
+.footer__foot-nav__link:hover{
   color:black;
   background-color: rgb(222, 215, 215);
 }
 
-.foot-nav{
+.footer__foot-nav{
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  justify-items:start;
+  text-align: center;
+  
 }
 
-.write{
+.footer__write{
   width: fit-content;  
 }
 
-.write p + a{
+.footer__write__link{
   width:fit-content;
   word-break: break-all;
 }
 
-.details address, .details address + p{
+.footer__details__address, .footer__details__title{
   color:#b4adea;
 }
 
@@ -157,7 +130,7 @@ footer a:hover{
 
 /* ---styles for home page begin here ----*/
 
-header + div{
+.profile-con{
   display:grid;
   row-gap:1em;
   width: 90vw;
@@ -167,7 +140,7 @@ header + div{
   
 }
 
-.profile-card{
+.profile-con__card{
   display:grid;
   justify-items:center;
   padding-top:2em;
@@ -180,11 +153,11 @@ header + div{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.profile-picture{
+.profile-con__card__profile-picture{
   width: 13em;
   height:13em;
 }
-.profile-picture img{
+.profile-con__card__profile-picture__img{
   object-fit: cover;
   width:100%;
   height:100%;
@@ -194,23 +167,23 @@ header + div{
   border-radius:6.5em;
 }
 
-.name-status h2{
+.profile-con__card__name-status__name{
   font-size: 2.2em;
   text-align: center;
 }
 
-.name-status p{
+.profile-con__card__name-status__field{
   text-align: center;
   font-size: larger;
 }
 
-.icon-links-container{
+.icon-con{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
 }
 
-.icon-link{
+.icon-con__link{
   text-decoration: none;
   text-align:center;
   color:#212121;
@@ -225,11 +198,12 @@ header + div{
   grid-template-columns: 1fr 1fr;
 }
 
-.nav-buttons form{
+.nav-buttons__form{
   padding: 0.5em;
 }
 
-.nav-buttons form button{
+
+.nav-buttons__form__btn{
   padding: 1em 1.5em;
   background-color: #b4adea;
   color: black;
@@ -239,25 +213,25 @@ header + div{
   border-radius:0.5em;
 }
 
-.profile-card + article{
+.profile-con__about-me{
   display:grid;
   row-gap:1em;
   margin:auto;
   width:90vw;
   padding-top:2em;
   padding-bottom:2em;
-  background-color: #efeef5;
+  background-color: #e1e1ea;
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
 
-.profile-card + article h2{
+.profile-con__about-me__header{
   display:inline-block;
   font-size: 2em;
   justify-self:self-start;
 }
 
-.profile-card + article p{
+.profile-con__about-me__para{
   text-align:justify;
   font-size: 1em;
   margin:auto;
@@ -278,7 +252,7 @@ header + div{
   row-gap:1em;
 }
 
-.education-container{
+.education__container{
   display:grid;
   grid-template-columns: 2fr 1fr;
   column-gap:1em;
@@ -290,14 +264,14 @@ header + div{
   font-weight: 600;
 }
 
-.education + section{
+.skills-con{
   display:grid;
   row-gap:1em;
   width:90vw;
   margin: auto; 
 }
 
-.skills-container{
+.skills-con__skills{
   display:grid;
   row-gap:1em;
   padding: 2em;
@@ -306,42 +280,30 @@ header + div{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.skills-container p{
+.skills-con__skills__para{
   font-weight:700;
   font-size:1.1em;
 }
 
-table td{
+.skills-con__skills__table__data{
   padding-right:2em;
   color: rgb(34, 34, 47);
 }
 
-.skills-container ~ .skills {
-  display:grid;
-  row-gap:1em;
-  padding: 2em;
-  justify-content: space-between;
-  background-color: #e1e1ea;
-  box-shadow: 0px 0px 10px rgb(138, 135, 135);
-}
 
-.skills-container ~ .skills p{
-  font-weight:700;
-  font-size:1.1em;
-}
 
-.skills-container ~ .skills ul li {
+.skills-con__skills__un__list{
   color: rgb(34, 34, 47);
 }
 
-.education + section + section{
+.certificates{
   display:grid;
   row-gap:1em;
   width:90vw;
   margin: auto;
 }
 
-.certificates-container{
+.certificates__con{
   display:grid;
   row-gap:1em;
   padding:1em;
@@ -349,7 +311,7 @@ table td{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.certificate{
+.certificates__con__file{
   display:grid;
   grid-template-columns: 2fr 1fr;
   column-gap:0.5em;
@@ -362,16 +324,12 @@ table td{
   border-color: rgb(198, 198, 201);
 }
 
-.certificate ~ p, .certificate ~ p ~ .pdf{
-  display: none;
-}
-
-.pdf{
+.certificates__con__file__pdf{
   width: 50%;
   height:fit-content;
 }
 
-.pdf img{
+.certificates__con__file__pdf__img{
   width: 100%;
   height:100%;
 }
@@ -388,19 +346,19 @@ table td{
   margin: auto;
 }
 
-.photography-history h2{
+.photographs__history__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.photo-card-container{
+.photographs__con{
   display:grid;
   row-gap:1em;
   width:90vw;
   margin: auto;
 }
 
-.photo-card{
+.photographs__con__card{
   display:grid;
   row-gap:1em;
   width:90vw;
@@ -409,16 +367,16 @@ table td{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.photo-description h2{
+.photographs__con__card__description__para{
   font-size: 1.2em;
 }
 
-.flower{
+.photographs__con__card__flower{
   width: 100%;
   height: 70%;
 }
 
-.flower img{
+.photographs__con__card__flower__img{
   width: 100%;
   height:fit-content;
 }
@@ -430,19 +388,19 @@ table td{
   margin: auto;
 }
 
-.movies h2{
+.movies__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.movie-cards-container{
+.movies__con{
   display:grid;
   row-gap:1em;
   width:90vw;
   margin: auto;
 }
 
-.movie-card{
+.movies__con__card{
   display:grid;
   row-gap:1em;
   width:90vw;
@@ -451,17 +409,17 @@ table td{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.movie{
+.movies__con__card__movie{
   width: 100%;
   height: 70%;
 }
 
-.movie-description h2{
+.movies__con__description__para{
   font-size: 1.2em;
   color:black;
 }
 
-.movie video{
+.movies__con__card__movie__vid{
   object-fit: cover;
   width: 100%;
   height:fit-content;
@@ -471,46 +429,52 @@ table td{
   display:grid;
   row-gap:1em;
   width:90vw;
+  height:fit-content;
   margin: auto;
 }
 
-.musics h2{
+.musics__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.music-cards-continer{
+.musics__con{
   display:grid;
   row-gap:1em;
   width:90vw;
   margin: auto;
 }
 
-.music-card{
+.musics__con__card{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
-  width:fit-content;
+  width:90vw;
   margin: auto;
   background-color: #e1e1ea;
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.album-cover{
-  width: 10em;
+.musics__con__card__album{
+  width: 8em;
   height: fit-content;
 }
 
-.music h3{
-  font-size: 1.2em;
-  color:black;
-}
-
-.album-cover img{
+.musics__con__card__album__img{
   object-fit: cover;
   width: 100%;
   height:100%;
 }
+
+
+.musics__con__card__music__title{
+  font-size: 1.2em;
+  color:black;
+}
+
+.musics__con__card__music__aud{
+  width: 100%;
+}
+
 
 /*--- styles for the hobbies page ends here----  */
 
@@ -524,47 +488,51 @@ table td{
   margin: auto;
 }
 
-.favorites h2{
+.favorites__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.book-card{
+.favorites__book-card{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh;
   padding-right: 1em;
   padding-top:1em;
-  padding-bottom:1em;
+  padding-bottom:2em;
   background-color: #e1e1ea;
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.book-description{
+.favorites__book-card__description{
   display: grid;
   align-items:center;
+  text-align: center;
   height:fit-content;
 }
 
-.book-cover{
+.description__book-cover{
   margin: auto;
   width:10em;
   height:fit-content;
 }
 
 
-.book-cover img{
+.description__book-cover__img{
   object-fit: cover;
   width:100%;
   height:100%;
 }
 
-.review{
+.favorites__book-card__review{
   text-align: justify;
   background-color: #f5f6f8;
+  padding:1em;
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
+  overflow-y: scroll;
 }
 
-.review p{
+.favorites__book-card__review__para{
   color: rgb(34, 34, 47);
   padding: 1em;
 }
@@ -576,12 +544,12 @@ table td{
   margin: auto;
 }
 
-.read h2{
+.read__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.read-container{
+.read__con{
   display: grid;
   row-gap:1em;
   padding: 2em;
@@ -589,7 +557,7 @@ table td{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.read-list ul{
+.read__con__list__ul{
   columns: 2;
 } 
 
@@ -600,18 +568,18 @@ table td{
   margin: auto;
 }
 
-.want-to-read h2{
+.want-to-read__para{
   font-size: 1.6em;
   color:#2e2665;
 }
 
-.want-to-read-container{
+.want-to-read__con{
   background-color: #e1e1ea;
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
   padding:2em;
 }
 
-.want-to-read-container ul{
+.want-to-read__con__list{
   columns:2;
 }
 
@@ -619,7 +587,7 @@ table td{
 
 
 /*--- styles for the contacts page begins here----  */
-header + h1{
+.contact__para{
   margin: auto;
   width:75vw;
 }
@@ -632,7 +600,7 @@ header + h1{
   text-align: center;
 }
 
-.contact-card-container{
+.contact__con{
   display:grid;
   row-gap:1em;
   padding: 2em;
@@ -640,12 +608,12 @@ header + h1{
   box-shadow: 0px 0px 10px rgb(138, 135, 135);
 }
 
-.icon{
+.contact__con__icon{
   font-size:2em;
   color: rgb(51, 54, 87);
 }
 
-form button{
+.contact__con__form__btn{
   background-color: #b4adea;
   color: black;
   font-weight: bold;
@@ -654,27 +622,25 @@ form button{
   padding:  0.7em 2em;
 }
 
-form button:hover{
+.contact__con__form__btn:hover{
   opacity: 0.8;
 }
 
-form button:active{
+.contact__con__form__btn:active{
   opacity: 0.6;
 }
 
 /*--- styles for the contacts page ends here----  */
 
 
+/*----- making the skillssite responsive for landscape -----*/
 
 
-/*----- making the website responsive for landscape -----*/
-
-
-@media all and (min-width: 767px) and (max-width: 1023px) and (orientation: landscape){
+@media all and (min-width: 750px) and (max-width: 1023px) and (orientation: landscape){
 
   /* ---resume page--- */
 
-  .education + section{
+  .skills-con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "h2 h2";
@@ -683,18 +649,13 @@ form button:active{
     margin: auto; 
   }
 
-  .education + section h2{
+  .skills-con__para{
     grid-area: h2;
-  }
-
-  .skills-container + .skills + .skills{
-    padding-left: 20em;
-    grid-column:1/3;
   }
 
   /* ---hobbies pages---- */
 
-  .photo-card-container{
+  .photographs__con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -702,14 +663,14 @@ form button:active{
     row-gap:1em;
   }
 
-  .photo-card{
-    width:fit-content;
+  .photographs__con__card{
+    width:45vw;
     height: 100%;
   }
   
-  .flower img{
-    width: 352px;
-    height:198px;
+  .photographs__con__card__flower__img{
+    width: 45vw;
+    height:250px;
   }
 
   /* ---contact page ---*/
@@ -717,15 +678,19 @@ form button:active{
   .contact{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h1 h1";
     column-gap:1em;
+  }
+
+  .contact__para{
+    grid-area: h1;
   }
 
 }
 
 
 
-
-/*----- making the website responsive for Tablet -----*/
+/*----- making the skillssite responsive for Tablet -----*/
 
 
 
@@ -733,7 +698,7 @@ form button:active{
     
   /* --home page --*/
 
-  header + div{
+  .profile-con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     column-gap:1em;
@@ -741,64 +706,59 @@ form button:active{
     height:80vh;
   }
 
-  .profile-card{
+  .profile-con__card{
     width:100%;
     height:100%;
     padding:0;
   }
 
-  .profile-card + article{
+  .profile-con__about-me{
     padding:0;
     width:100%;
     height:100%;
     row-gap:0em;
-    background-color: #e1e1ea;
+    
   }
 
   /*--- resume page ----*/
 
-  .education + section{
+  .skills-con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "h2 h2 h2";
     column-gap:1em; 
   }
 
-  .education + section h2{
+  .skills-con__para{
     grid-area: h2;
   }
 
-  .skills-container{
+  .skills-con__skills{
     padding:2em;
     row-gap: 0em;
     text-align: center;
   }
 
-  .skills-container p{
+  .skills-con__skills__para{
     text-align: left;
   }
 
-  table td{
+  .skills-con__skills__table__data{
     padding-right:0.5em;
     color: rgb(34, 34, 47);
   }
 
-  .certificates-container{
+  .certificates__con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap:1em;
     padding:1em;
-    background-color: #e1e1ea;
-    box-shadow: 0px 0px 10px rgb(138, 135, 135);
   }
 
-  .certificate + .certificate + .certificate + .certificate + .certificate{
-   grid-column: 1/3;
-  }
 
   /*--- hobbies page ----*/
-  .photo-card-container{
+  .photographs__con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -806,60 +766,60 @@ form button:active{
     row-gap:1em;
   }
 
-  .photo-card{
-    width:fit-content;
+  .photographs__con__card{
+    width:30vw;
     height: 100%;
   }
   
-  .flower img{
-    width: 303px;
-    height:202px;
+  .photographs__con__card__flower__img{
+    width: 30vw;
+    height:30vh;
   }
   
-  .movie-cards-container{
+  .movies__con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap:1em;
   }
 
-  .movie-card{
+  .movies__con__card{
     width:100%;
     height: 100%;
   }
 
-  .movie{
+  .movies__con__card__movie{
     text-align: center;
   }
  
-  .movie video{
+  .movies__con__card__movie__vid{
     width:303px;
     height: 202px;
   }
   
-  .movie-description h2{
+  .movies__con__description__para{
     font-size: 1.2em;
     color:black;
   }
 
   
-.music-cards-continer{
+.musics__con{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap:1em;
 }
 
-.music-card{
+.musics__con__card{
   width:100%;
   height: 100%;
 }
 
-.album-cover{
+.musics__con__card__album{
   width: 100%;
 }
 
-.music audio{
+.musics__con__card__music__aud{
   width:100%;
 }
 
@@ -893,26 +853,35 @@ form button:active{
   vertical-align: center;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr;
+  grid-template-areas: "h1 h1 h1";
   column-gap:2em;
 }
+
+.contact__para{
+  grid-area: h1;
+}
 }
 
 
-/* ---making the website responsive for desktop--- */
+
 
 
 @media all and (min-width: 1281px){
   /* --home page --*/
 
-  .nav-link{
-    display: grid;
+  .header__con__nav{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   } 
 
-  .hamburger-menu{
+  .header__con__nav__link{
+    display:block;}
+
+  .header__name__burger{
     display: none;
   }
-  header + div{
+  .profile-con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     column-gap:1em;
@@ -920,13 +889,13 @@ form button:active{
     height:80vh;
   }
 
-  .profile-card{
+  .profile-con__card{
     width:100%;
     height:100%;
     padding:0;
   }
 
-  .profile-card + article{
+  .profile-con__about-me{
     padding:0;
     width:100%;
     height:100%;
@@ -936,33 +905,33 @@ form button:active{
 
   /*--- resume page ----*/
 
-  .education + section{
+  .skills-con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "h2 h2 h2";
     column-gap:1em; 
   }
 
-  .education + section h2{
+  .skills-con__para{
     grid-area: h2;
   }
 
-  .skills-container{
+  .skills-con__skills{
     padding:2em;
     row-gap: 0em;
     text-align: center;
   }
 
-  .skills-container p{
+  .skills-con__skills__para{
     text-align: left;
   }
 
-  table td{
+  .skills-con__skills__table__data{
     padding-right:0.5em;
     color: rgb(34, 34, 47);
   }
 
-  .certificates-container{
+  .certificates__con{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -972,13 +941,10 @@ form button:active{
     box-shadow: 0px 0px 10px rgb(138, 135, 135);
   }
 
-  .certificate + .certificate + .certificate + .certificate + .certificate{
-   grid-column: 1/3;
-  }
-
+  
 
   /*--- hobbies page ----*/
-  .photo-card-container{
+  .photographs__con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -986,95 +952,100 @@ form button:active{
     row-gap:1em;
   }
 
-  .photo-card{
-    width:fit-content;
+  .photographs__con__card{
+    width:30vw;
     height: 100%;
   }
   
-  .flower img{
-    width: 375px;
-    height:275px;
+  .photographs__con__card__flower__img{
+    width: 30vw;
+    height:35vh;
   }
   
-  .movie-cards-container{
+  .movies__con{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap:1em;
   }
 
-  .movie-card{
+  .movies__con__card{
     width:100%;
     height: 100%;
   }
 
-  .movie{
+  .movies__con__card__movie{
     text-align: center;
   }
  
-  .movie video{
+  .movies__con__card__movie__vid{
     width: 370px;
     height:270px;
   }
   
-  .movie-description h2{
+  .movies__con__description__para{
     font-size: 1.2em;
     color:black;
   }
 
   
-.music-cards-continer{
+  .musics__con{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap:1em;
-}
+  }
 
-.music-card{
-  width:100%;
-  height: 100%;
-}
+  .musics__con__card{
+    width:100%;
+    height: 100%;
+  }
 
-.album-cover{
-  width: 100%;
-}
+  .musics__con__card__album{
+    width: 100%;
+  }
 
-.music audio{
-  width:100%;
-}
+  .musics__con__card__music__aud{
+    width:100%;
+  }
 
-/*--- Books page ----*/
-  
-.favorites{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.6em 1fr 1fr ;
-  column-gap:1em;
-  grid-template-areas: "h2 h2";
-}
+  /*--- Books page ----*/
+    
+  .favorites{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.6em 1fr 1fr ;
+    column-gap:1em;
+    grid-template-areas: "h2 h2";
+  }
 
-.favorites h2{
-  grid-area: h2;
-}
+  .favorites h2{
+    grid-area: h2;
+  }
 
-.read{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  column-gap:1em;
-  grid-template-areas: "h2 h2 h2 ";
-}
+  .read{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap:1em;
+    grid-template-areas: "h2 h2 h2 ";
+  }
 
-.read h2{
-  grid-area: h2;
-}
+  .read h2{
+    grid-area: h2;
+  }
 
 
-.contact{
-  vertical-align: center;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap:2em;
-}
+  .contact{
+    vertical-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr;
+    grid-template-areas: "h1 h1 h1";
+    column-gap:2em;
+  }
+
+  .contact__para{
+    grid-area: h1;
+  }
 }
 
